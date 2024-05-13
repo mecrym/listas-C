@@ -1,24 +1,28 @@
-/*A série de Fibonacci é formada pela sequência: 1, 1, 2, 3, 5, 8, 13, 21, 34, ... .
-Escreva um algoritmo que peça um número N maior que 2. Gere e imprima a série de 1 até este enésimo termo.*/
+//s=s+1/(n+2)^3
+//s=0 e n=-1
 #include <stdio.h>
-#include <stdlib.h>
+#include <math.h>
 
 int main(){
-    int num, primeiro = 0 , segundo = 1, proximo=1;
-    printf("Digite um número: ");
-    scanf("%d", &num);
-    if (num>2)
+    //s=s+1/(n+2)^3
+    int n=-1;
+    float s = 0;
+    printf("digite o vslor de n: ");
+    scanf("%d", &n);
+
+    if (n>0)
     {
-        for (int i = 0; i < num; i++)
+        for (int i = -1; i <= n; i++)
         {
-            printf("%d ", proximo);
-            proximo = primeiro + segundo;
-            primeiro = segundo;
-            segundo = proximo;
+            s = s + 1/pow(i+2, 3);
+            printf("O valor de s e: %f\n", s);
         }
-    }else
-    {
-        printf("Número inválido\n");
+        printf("O valor de s e: %f\n", s);
     }
+    else if (n<0)
+    {
+        printf("O valor de n e negativo\n");
+    }
+    
     return 0;
 }
