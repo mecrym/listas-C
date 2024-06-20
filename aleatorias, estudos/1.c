@@ -58,7 +58,7 @@ void notasAlunos(int n, int notas[n][4]){
     }
 }
 //uma função que receba a matriz de notas e devolva um vetor do tipo real contendo a média de cada aluno.
-void mediaAlunos (int n, int notas[n][4], float media[n], char nomes[n][50]){//nomes[n][50] tras os dados armazenados na função nomeAlunos para a função mediaAlunos e com isso imprime o nome do aluno junto com a media por causa do &nomes[i]
+void mediaAlunos (int n, int notas[n][4], float media[n], char nomes[n][50]){//nomes[n][50] traz os dados armazenados na função nomeAlunos para a função mediaAlunos e com isso imprime o nome do aluno junto com a media por causa do &nomes[i]
     int i, j;//contadores
     for(i=0; i<n; i++){//para cada aluno
         media[i]=0;//inicializa a media
