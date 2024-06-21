@@ -1,11 +1,11 @@
-/*Crie um procedimento para:
-
-- ler dois valores inteiros positivos, limites para definirem um intervalo; ( esses valores deverão ser globais)
-- ler uma quantidade de valores inteiros a serem testados – FLAG -1; um por vez;
-- contar e mostrar dentre esses valores lidos os que forem múltiplos de 2 e de 3, ao mesmo tempo, e pertençam ao intervalo.*/
-
 #include <stdio.h>
 #include <stdlib.h>
+/*Crie um procedimento para:
+
+- ler dois valores inteiros positivos, limites para definirem um intervalo ( esses valores deverão ser globais)
+- ler uma quantidade de valores inteiros a serem testados;- Flag -1, um por vez;
+- contar e mostrar dentre esses valores lidos os que forem múltiplos de 3, que não forem também múltiplos de 5, e
+  pertençam ao intervalo.*/
 
 int limInf, limSup;//LIMITES!!!!
 
@@ -28,9 +28,9 @@ void teste(){
 
         if(valores>=limInf && valores<=limSup){
         //contar e mostrar dentre esses valores lidos os que forem múltiplos de 2 e de 3, ao mesmo tempo, e pertençam ao intervalo.
-            if(valores%2==0 && valores%3==0){
+            if(valores%3==0 && valores%5!=0){
                 cont++;
-                printf("multiplo de 2 e 3: %d\n", valores);
+                printf("SAO multiplo de 2 e NAO são multiplos de 5: %d\n", valores);
             }
         }else{
             if(valores!=-1){
