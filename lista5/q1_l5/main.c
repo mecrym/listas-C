@@ -1,5 +1,5 @@
 /*ler uma palavra do teclado;
-**- mostrar todas as letras maiúsculas que estão na palavra digitada.*/
+**- mostrar todas as letras maiï¿½sculas que estï¿½o na palavra digitada.*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
