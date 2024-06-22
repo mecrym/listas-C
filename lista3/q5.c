@@ -4,17 +4,19 @@ Escreva um algoritmo que peça um número N maior que 2. Gere e imprima a série
 #include <stdlib.h>
 
 int main(){
-    int num, primeiro = 0 , segundo = 1, proximo=1;
+    int num, primeiro = 1 , segundo = 0, proximo=1;
     printf("Digite um número: ");
     scanf("%d", &num);
     if (num>2)
     {
         for (int i = 0; i < num; i++)
         {
-            printf("%d ", proximo);
+            //printf("%d ", proximo);  n tem necessidade se colocar primeiro=1 e segundo =0 no lugar de primeiro =0 e segundo =1 
             proximo = primeiro + segundo;
             primeiro = segundo;
             segundo = proximo;
+
+            printf("%d ", proximo);
         }
     }else
     {
