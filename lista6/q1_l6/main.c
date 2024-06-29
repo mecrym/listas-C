@@ -23,7 +23,7 @@ int main()
     scanf("%d", &n);
 
     resultado=calcFatorial(n);
-    printf("fatorial de %d: %d", n, resultado);
+    printf("fatorial de %d!: %d", n, resultado);
 
     return 0;
 }
