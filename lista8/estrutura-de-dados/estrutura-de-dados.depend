@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1719695934 source:c:\users\duda moreira\onedrive - sga.pucminas.br\Área de trabalho\aed\listas-c\lista8\estrutura-de-dados\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
