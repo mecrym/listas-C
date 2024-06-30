@@ -23,4 +23,4 @@ int main()
     printf("soma precos: %.2f", total.preco);
 
     return 0;
-}
+}// ;3
