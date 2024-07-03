@@ -13,7 +13,7 @@ typedef struct cilindro cilindro;
 // Função para calcular o volume do cilindro
 float volume(cilindro A) {//deve passar o tipo!! tipo=cilindro e variavel=A
     float areaB;
-    float r, v;
+    float r;
     float pi = 3.14;
 
     r = A.diametroBase / 2.0;
@@ -21,18 +21,17 @@ float volume(cilindro A) {//deve passar o tipo!! tipo=cilindro e variavel=A
     return areaB * A.altura;
 }
 
-
 int main() {
     cilindro A;
 
-    printf("Digite o valor do diâmetro da base: \n");
+    printf("Digite o valor do diametro da base: \n");
     scanf("%f", &A.diametroBase);
     printf("Digite o valor da altura: \n");
     scanf("%f", &A.altura);
 
     // Chama a função volume e imprime o resultado
     float resultado = volume(A);//chama so a variavel e n o tipo
-    printf("\nO volume do cilindro é: %.2f\n", resultado);
+    printf("\nO volume do cilindro e: %.2f\n", resultado);
 
     //imprime novos valores
     printf("\nValor do diâmetro da base: %.2f\n", A.diametroBase);
